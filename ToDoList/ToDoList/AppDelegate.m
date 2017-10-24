@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ToDoItemTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,13 +22,16 @@
     [self.window makeKeyAndVisible];
     
     //Set Root View Controller
-    self.window.rootViewController = [[UIViewController alloc]init];
+//    self.window.rootViewController = [[UIViewController alloc]init];
+//
+//    UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, CGRectGetWidth(self.window.bounds) - 2 * 20, 30)];
+//    textField.placeholder = @"New to-do item";
+//    textField.borderStyle = UITextBorderStyleRoundedRect;
+//    [self.window addSubview:textField];
     
-    UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, CGRectGetWidth(self.window.bounds) - 2 * 20, 30)];
-    textField.placeholder = @"New to-do item";
-    textField.borderStyle = UITextBorderStyleRoundedRect;
-    [self.window addSubview:textField];
+    UIViewController * toDoItemViewController = [[ToDoItemTableViewController alloc] init];
     
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:toDoItemViewController];
     return YES;
 }
 

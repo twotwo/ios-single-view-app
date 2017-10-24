@@ -78,8 +78,40 @@
 ## 3. 添加数据
 [参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/tutorialadddata.html)
 
-### 创建 ToDoItem 类
+### 载入数据
 
-1. 在ToDoList文件夹下建立 Objective-C Class(Cocoa Touch Class)：ToDoItem
+1. 要分配并初始化数组
 
-![创建类](ToDoItem.png)
+2. 载入初始数据
+
+        - (void)viewDidLoad {
+            [super viewDidLoad];
+
+            self.toDoItems = [[NSMutableArray alloc] init];
+            [self loadInitialData];
+        }
+
+        - (void)loadInitialData {
+            ToDoItem *item1 = [[ToDoItem alloc] init];
+            item1.itemName = @"Buy milk";
+            [self.toDoItems addObject:item1];
+            ToDoItem *item2 = [[ToDoItem alloc] init];
+            item2.itemName = @"Buy eggs";
+            [self.toDoItems addObject:item2];
+            ToDoItem *item3 = [[ToDoItem alloc] init];
+            item3.itemName = @"Read a book";
+            [self.toDoItems addObject:item3];
+        }
+
+
+### 显示数据
+
+1. 在表格中显示一个部分
+2. 返回表格中的行数
+3. 在表格中显示单元格
+
+### 将项目标记为已完成
+
+1. 将项目标记为已完成或未完成
+2. 显示项目的完成状态
+

@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(20,100,
+               CGRectGetWidth(self.view.bounds) - 2 * 20,30)];
+    
+    textField.placeholder = @"New to-do item";
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:textField];
 }
 
 
