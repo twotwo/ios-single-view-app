@@ -20,13 +20,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UILabel * label = [[UILabel alloc] initWithFrame:self.window.bounds];
-    label.text = @"Hello, World!";
-    label.textAlignment = NSTextAlignmentCenter;
-    [self.window addSubview:label];
-    
     //Set Root View Controller
     self.window.rootViewController = [[UIViewController alloc]init];
+    
+    UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, CGRectGetWidth(self.window.bounds) - 2 * 20, 30)];
+    textField.placeholder = @"New to-do item";
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    [self.window addSubview:textField];
     
     return YES;
 }
