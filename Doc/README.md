@@ -1,10 +1,10 @@
 # 马上着手开发 iOS 应用程序
 
-## ToDoList 项目
-[参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/index.html)
+## 1. 项目基础
+[参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/tutorial_basics.html)
 
-### 项目的创建
-创建一个 iOS Single View Application
+### 创建 ToDoList 项目
+创建一个 iOS Single View Application 项目
 
 ### 创建第一个视图
 
@@ -46,3 +46,40 @@
     return YES;
     }
 
+
+## 2. 用户界面
+[参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/tutorialui.html)
+
+### 设置UIViewAutoresizing
+
+貌似iOS 8+ 默认就可以进行横竖屏大小缩放
+
+### 创建第二个ViewController
+
+1. 在ToDoList文件夹下建立 Cocoa Touch Class：ToDoItemTableViewController
+2. 修改AppDelegate.m，给self.window.rootViewController赋值一个ToDoItemTableViewController类型的对象
+
+### 创建 ToDoItem 类
+
+[参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/tutorialadddata.html)
+
+1. 在ToDoList文件夹下建立 Objective-C Class(Cocoa Touch Class)：ToDoItem
+
+![创建类](ToDoItem.png)
+
+    @interface ToDoItem : NSObject
+
+    @property NSString *itemName;
+    @property BOOL completed;
+    @property (readonly) NSDate *creationDate;
+
+    @end
+
+## 3. 添加数据
+[参考](https://ltryee.gitbooks.io/start-developing-ios-apps-today-non-ib/content/tutorialadddata.html)
+
+### 创建 ToDoItem 类
+
+1. 在ToDoList文件夹下建立 Objective-C Class(Cocoa Touch Class)：ToDoItem
+
+![创建类](ToDoItem.png)
