@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA93A5351F9F131700522102 /* ToDoItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA93A5341F9F131700522102 /* ToDoItemTableViewController.m */; };
+		BABBF8891F9F5927001C5428 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BABBF8881F9F5926001C5428 /* icon.png */; };
 		BACF81331F9F2885009DADFA /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BACF81321F9F2885009DADFA /* ToDoItem.m */; };
 		BAF821BA1F9E01DD00056B59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF821B91F9E01DD00056B59 /* AppDelegate.m */; };
 		BAF821BD1F9E01DD00056B59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF821BC1F9E01DD00056B59 /* ViewController.m */; };
@@ -40,6 +41,7 @@
 		BA93A5331F9F131700522102 /* ToDoItemTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItemTableViewController.h; sourceTree = "<group>"; };
 		BA93A5341F9F131700522102 /* ToDoItemTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoItemTableViewController.m; sourceTree = "<group>"; };
 		BA93A5361F9F144A00522102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Doc/README.md; sourceTree = "<group>"; };
+		BABBF8881F9F5926001C5428 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		BACF81311F9F2885009DADFA /* ToDoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		BACF81321F9F2885009DADFA /* ToDoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		BAF821B51F9E01DD00056B59 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 		BAF821B71F9E01DD00056B59 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				BABBF8881F9F5926001C5428 /* icon.png */,
 				BAF821B81F9E01DD00056B59 /* AppDelegate.h */,
 				BAF821B91F9E01DD00056B59 /* AppDelegate.m */,
 				BAF821BB1F9E01DD00056B59 /* ViewController.h */,
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABBF8891F9F5927001C5428 /* icon.png in Resources */,
 				BAF821C51F9E01DD00056B59 /* LaunchScreen.storyboard in Resources */,
 				BAF821C21F9E01DD00056B59 /* Assets.xcassets in Resources */,
 				BAF821C01F9E01DD00056B59 /* Main.storyboard in Resources */,
